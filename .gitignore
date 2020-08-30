@@ -1,0 +1,6 @@
+*.json
+*copy*
+*pics
+.prettierrc
+*.zip
+*.map
