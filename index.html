@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment4</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  
+  <h1 id="loading">取得中</h1>
+  <div id="container" class="hidden">
+    <h1 id="title">問題<span id="title__num">1</span></h1>
+    <h2 id="genre">[ジャンル]<span id="genre__detail"> const packageName = require('packageName');
+      </span>
+    </h2>
+    <h2 id=difficulty>[難易度]<span id=difficulty__detail> SDF
+      </span></h2>
+  </div>
+
+  <hr id='quiz'>
+  <span id='quiz__content'>少々お待ち下さい</span>
+  <hr>
+  <ul id='answers' class="hidden">
+    <li id="homeBtn" class="hidden changePage"><button>ホームに戻る</button></li>
+    <li id="startBtn" class='hidden changePage'><button>開始</button></li>
+    <li><button class='choice' data-number="0">dummy</button><br></li><br>
+    <li><button class='choice' data-number='1'>dummy</button><br></li><br>
+    <li><button class='choice' data-number='2'>dummy</button><br></li><br>
+    <li><button class='choice' data-number='3'>dummy</button><br></li><br>
+  </ul>
+
+
   <script src="main.js"></script>
 </body>
+
 </html>
