@@ -1,0 +1,40 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+h1,h2,h3,h4 {
+   padding: 0;
+   margin: 0;
+}
+
+#title, #loading {
+   margin: 1rem 0;
+}
+
+button {
+   margin-bottom: .2rem;
+   cursor: pointer;
+}
+
+ul {
+   padding-left: 0.2rem;
+}
+
+li {
+   display: inline-block;
+   list-style: none;
+   // cursor: pointer;
+}
+
+.correct {
+   background-color: aqua;
+}
+
+.incorrect {
+   background-color: red;
+}
+
+.hidden {
+   display: none;
+}
