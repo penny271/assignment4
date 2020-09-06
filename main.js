@@ -79,21 +79,16 @@ const showContent = () => {
    genreDetail.textContent = ` ${currentQuestion.category}`;
    difficultyDetail.textContent = ` ${currentQuestion.difficulty}`;
    quizContent.innerHTML = ` ${currentQuestion.question}`;
-   // genreDetail.textContent = 'currentQuestion.category';
 
    choices.forEach((choice, index) => {
       choices[index].textContent = currentQuestion['choice' + index]; //4択問題の内容
-      // choices[index].textContent = 'AAAAAAAAAAAAAA';
    });
 };
 
 //ゲームを開始する
 const startGame = () => {
    duplicatedQuestions = [...quizContents];
-   // if (questionIndex == duplicatedQuestions.length) {
-   if (questionIndex == 2) {
-      //------------後で直す!!!!
-      // if (questionIndex == duplicatedQuestions.length) {
+   if (questionIndex == duplicatedQuestions.length) {
       hideElements();
       return;
    }
@@ -124,7 +119,6 @@ choices.forEach((choice) => {
          startGame();
       }, 300);
    });
-   // choices.forEach((choice) => {});
 });
 
 const changePage = Array.from(document.getElementsByClassName('changePage'));
